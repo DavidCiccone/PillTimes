@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Pill Timer</title>
+  <meta name="description" content="Pill Timer">
+  <meta name="author" content="David Ciccone">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div class="head">
+		<h1>Pill and Eating Times</h1>
+		<h3>Time first pill was taken</h3>
+		<input id="master-time-hours" placeholder="hour" value="8"/> :
+		<input id="master-time-minutes" placeholder="minutes" value="00"/><br>
+		<button id="master-submit">Submit</button>
+	</div>
+<div class="main">
+<div class="display display2">
+<h2 class="underline">
+	Pills Time
+</h2>
+	<ul id="pill">
+		<li id="pills"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<div class="display display2">
+<h2 class="underline">
+	Start Eating
+</h2>
+	<ul id="start-eat">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+
+<div class="display display3">
+<h2 class="underline">
+	Stop Eating
+</h2>
+	<ul id="stop-eat">
+		<li id="stop-eating"></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+</div>
+<div class="end">Bedtime dose at <span id="last"></span> 2hr 20min from dose 6</div>
+  <script src="js/moment.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
